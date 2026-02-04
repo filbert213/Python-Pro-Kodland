@@ -5,9 +5,30 @@ body {
 }
 
 .hero {
-    background: linear-gradient(to right, #1d976c, #93f9b9);
-    color: white;
+    background: linear-gradient(to right, #1b8761, #6dca8f);
     padding: 120px 20px;
+    animation: color-change 10s infinite;
+}
+
+@keyframes color-change {
+    0% { color: #ffffff; }
+    20% { color: #e7ffe9; }
+    40% { color: #d0ffdf; }
+    60% { color: #ccffdc; }
+    80% { color: #d0ffdf; }
+    100% { color: #e7ffe9; }
+}
+
+.widget {
+    position: fixed;
+    top: 100px;
+    right: 20px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
 }
 
 .nav-link {
